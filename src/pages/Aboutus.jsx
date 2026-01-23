@@ -24,7 +24,7 @@ export default function Aboutus() {
   // TIMELINE DATA
 
   const steps = [
-    {
+   {
       title: "Siya Soft",
       duration: "Apr 2011– Mar 2018",
       bullets: ["Web Designer"],

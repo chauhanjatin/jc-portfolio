@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="text-center">
           <div className="sm:h-[calc(100vh-70px)] h-full flex justify-center items-center">
             <div>
-              {/* <div className="flex justify-center sm:mt-0 mt-6">
+              <div className="flex justify-center sm:mt-0 mt-6">
                 <div className="mb-2.5 py-2 px-2.5 inline-flex items-center gap-2.5 bg-white rounded-[80px]">
                   <div>
                     <img src={satisfiedclients} alt="" />
@@ -29,8 +29,8 @@ export default function Hero() {
                   <div>
                     <strong>100+</strong> Satisfied Clients
                   </div>
-                </div>                
-              </div> */}
+                </div>
+              </div>
 
               <h1 className="text-[#1F1E1E]">
                 I design digital experiences that connec brands with users
@@ -342,12 +342,14 @@ export default function Hero() {
 
       <Footer></Footer>
 
-      {/* <Link className="upwork-logo hidden sm:block"
+      <Link
+        className="upwork-logo hidden sm:block"
         to="https://upwork.com/freelancers/jatinchauhan"
-        target="_blank">
+        target="_blank"
+      >
         <img src={upworkring} alt="" className="circle-text" />
         <img src={uplogo} alt="" className="upwork-icon" />
-      </Link>       */}
+      </Link>
     </div>
   );
 }
