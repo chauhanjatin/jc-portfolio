@@ -30,12 +30,11 @@ export default function Sidebar({ open, setOpen }) {
           open
             ? "translate-y-0 opacity-100 pointer-events-auto"
             : "-translate-y-full opacity-0 pointer-events-none"
-        }`}>
-
+        }`}
+    >
       <div className="w-full">
         <div className="containerX">
           <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-40 gap-30 lg:gap-56">
-            
             <div className="flex sm:justify-center justify-start ">
               <ul className="text-[#1E1E1E] lg:space-y-16 sm:space-y-14 space-y-4">
                 {menuItems.map((item, index) => {
@@ -49,9 +48,7 @@ export default function Sidebar({ open, setOpen }) {
                            ${
                              open
                                ? "opacity-100 translate-y-0"
-                               : "opacity-0 translate-y-8"
-                           }`}
-                    >
+                               : "opacity-0 translate-y-8"}`}>
                       <Link
                         to={item.path}
                         onClick={() => setOpen(false)}
@@ -124,8 +121,7 @@ export default function Sidebar({ open, setOpen }) {
       flex gap-2.5 items-center mt-5
       transition-all duration-700 ease-in-out
       ${open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
-    `}
-                >
+    `}>
                   <img src={phoneicon} alt="" className="w-6 md:w-auto" />
                   <p className="text-[20px] xl:text-[28px] font-normal text-[#1E1E1E]">
                     +91 70963 64801
@@ -239,11 +235,9 @@ export default function Sidebar({ open, setOpen }) {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
     </div>
   );
 }

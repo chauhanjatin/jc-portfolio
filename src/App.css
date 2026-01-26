@@ -143,18 +143,23 @@ p {
   0% {
     transform: rotate(0deg);
   }
+
   15% {
     transform: rotate(18deg);
   }
+
   30% {
     transform: rotate(-12deg);
   }
+
   45% {
     transform: rotate(18deg);
   }
+
   60% {
     transform: rotate(-12deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -178,15 +183,19 @@ p {
   0% {
     transform: translateY(0);
   }
+
   25% {
     transform: translateY(-50px);
   }
+
   50% {
     transform: translateY(-100px);
   }
+
   75% {
     transform: translateY(-150px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -298,20 +307,16 @@ p {
 
 .img-marquee:before {
   left: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgb(255, 255, 255)
-  );
+  background: linear-gradient(to left,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255));
 }
 
 .img-marquee:after {
   right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgb(255, 255, 255)
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255));
 }
 
 .logos {
@@ -330,6 +335,7 @@ p {
   0% {
     transform: translateX(calc(0% + 50px));
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -372,11 +378,9 @@ p {
 }
 
 .Portfolio-contant {
-  background: linear-gradient(
-    180deg,
-    rgba(30, 30, 30, 0) 0%,
-    rgba(30, 30, 30, 0.9) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(30, 30, 30, 0) 0%,
+      rgba(30, 30, 30, 0.9) 100%);
   padding: 20px;
   position: absolute;
   width: 100%;
@@ -450,6 +454,7 @@ p {
     opacity: 0;
     transform: scale(0.97);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -478,22 +483,28 @@ p {
 }
 
 @keyframes typing {
+
   0%,
   5% {
     content: "";
   }
+
   1% {
     content: "U";
   }
+
   2% {
     content: "UI";
   }
+
   3% {
     content: "UI/";
   }
+
   4% {
     content: "UI/U";
   }
+
   5% {
     content: "UI/UX";
   }
@@ -502,18 +513,23 @@ p {
   10% {
     content: "UI/UX";
   }
+
   12% {
     content: "UI/U";
   }
+
   14% {
     content: "UI/";
   }
+
   16% {
     content: "UI";
   }
+
   18% {
     content: "U";
   }
+
   20% {
     content: "";
   }
@@ -522,15 +538,19 @@ p {
   21% {
     content: "B";
   }
+
   22% {
     content: "Br";
   }
+
   23% {
     content: "Bra";
   }
+
   24% {
     content: "Bran";
   }
+
   25% {
     content: "Brand";
   }
@@ -539,18 +559,23 @@ p {
   30% {
     content: "Brand";
   }
+
   32% {
     content: "Bran";
   }
+
   34% {
     content: "Bra";
   }
+
   36% {
     content: "Br";
   }
+
   38% {
     content: "B";
   }
+
   40% {
     content: "";
   }
@@ -559,21 +584,27 @@ p {
   41% {
     content: "P";
   }
+
   42% {
     content: "Pr";
   }
+
   43% {
     content: "Pro";
   }
+
   44% {
     content: "Prod";
   }
+
   45% {
     content: "Produ";
   }
+
   46% {
     content: "Produc";
   }
+
   47% {
     content: "Product";
   }
@@ -582,24 +613,31 @@ p {
   52% {
     content: "Product";
   }
+
   54% {
     content: "Produc";
   }
+
   56% {
     content: "Produ";
   }
+
   58% {
     content: "Prod";
   }
+
   60% {
     content: "Pro";
   }
+
   62% {
     content: "Pr";
   }
+
   64% {
     content: "P";
   }
+
   66% {
     content: "";
   }
@@ -608,21 +646,27 @@ p {
   67% {
     content: "W";
   }
+
   68% {
     content: "We";
   }
+
   69% {
     content: "Web";
   }
+
   70% {
     content: "Webs";
   }
+
   71% {
     content: "Websi";
   }
+
   72% {
     content: "Websit";
   }
+
   73% {
     content: "Website";
   }
@@ -631,34 +675,43 @@ p {
   80% {
     content: "Website";
   }
+
   82% {
     content: "Websit";
   }
+
   84% {
     content: "Websi";
   }
+
   86% {
     content: "Webs";
   }
+
   88% {
     content: "Web";
   }
+
   90% {
     content: "We";
   }
+
   92% {
     content: "W";
   }
+
   94% {
     content: "";
   }
 }
 
 @keyframes blink {
+
   0%,
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -813,6 +866,7 @@ p {
       14px 0,
       38px 0;
   }
+
   33% {
     box-shadow:
       -38px 0px,
@@ -820,6 +874,7 @@ p {
       14px 0,
       38px 0;
   }
+
   66% {
     box-shadow:
       -38px 0px,
@@ -827,6 +882,7 @@ p {
       14px -12px,
       38px 0;
   }
+
   100% {
     box-shadow:
       -38px 0,
@@ -844,6 +900,7 @@ p {
       14px 0,
       38px 0;
   }
+
   33% {
     box-shadow:
       -38px 0px,
@@ -851,6 +908,7 @@ p {
       14px 0,
       38px 0;
   }
+
   66% {
     box-shadow:
       -38px 0px,
@@ -858,6 +916,7 @@ p {
       14px -12px,
       38px 0;
   }
+
   100% {
     box-shadow:
       -38px 0,
@@ -877,6 +936,36 @@ p {
   width: 65%;
   margin: 0 auto;
   text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--primary-color)) !important;
+}
+
+
+
+.content-text {
+  height: 100px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.content-text::-webkit-scrollbar {
+  width: 4px;
+}
+
+.content-text::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.content-text::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1799px) {
