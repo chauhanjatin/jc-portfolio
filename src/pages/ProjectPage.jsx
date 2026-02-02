@@ -173,7 +173,7 @@ export default function ProjectPage() {
 
       <div className="containerX">
         <Cta />
-        <Testimonial />
+        {/* <Testimonial /> */}
       </div>
       
       <Footer />

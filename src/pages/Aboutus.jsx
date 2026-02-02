@@ -54,21 +54,10 @@ export default function Aboutus() {
       duration: "Apr 2021 – Present",
       bullets: ["Coders Brain", "India"],
     },
-    {
-      title: "UI/UX Designer – Remote Staff",
-      duration: "Feb 2022 – Dec 2022",
-      bullets: ["Engine B", "UK"],
-      images: ukicon,
-    },
-    {
-      title: "UI/UX + Frontend Designer - Freelancer",
-      duration: "Apr 2021 - Present",
-      bullets: ["LIS", "India"],
-      images: indiaicon,
-    },
+
   ];
 
-  // SCROLL EFFECT
+
   useEffect(() => {
     const handleScroll = () => {
       const rect = containerRef.current.getBoundingClientRect();
@@ -246,7 +235,7 @@ export default function Aboutus() {
           </div>
         </div>
 
-        <Testimonial></Testimonial>
+        {/* <Testimonial></Testimonial> */}
 
       </div>
       <Footer></Footer>

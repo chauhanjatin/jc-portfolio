@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="text-center">
           <div className="sm:h-[calc(100vh-70px)] h-full flex justify-center items-center">
             <div>
-              <div className="flex justify-center sm:mt-0 mt-6">
+              {/* <div className="flex justify-center sm:mt-0 mt-6">
                 <div className="mb-2.5 py-2 px-2.5 inline-flex items-center gap-2.5 bg-white rounded-[80px]">
                   <div>
                     <img src={satisfiedclients} alt="" />
@@ -30,7 +30,7 @@ export default function Hero() {
                     <strong>100+</strong> Satisfied Clients
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <h1 className="text-[#1F1E1E]">
                 I design digital experiences that connec brands with users
@@ -77,24 +77,23 @@ export default function Hero() {
             <h2>Latest Work</h2>
             <div className="Portfolio-grid">
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                <div className="bg-white h-full project-imgage">
-                  <p className="text-[#1F1E1E99] mb-2.5 text-start">
-                    Dashboard
-                  </p>
+                <div className="bg-white p-5 h-full ">
+                  <p className="text-[#1F1E1E99] text-start mb-2.5">Web App</p>
                   <div>
-                    <img src={project1} alt="" />
+                    <img src={project4} alt="" />
                   </div>
                 </div>
+
                 <div className="Portfolio-contant">
-                  <div className="w-full ">
+                  <div className="w-full">
                     <div className="flex items-center gap-2.5">
-                      <h3 className="text-white">Dmysti5</h3>
-                      <h4 className="text-white">(Cybersecurity)</h4>
+                      <h3 className="text-white">Uniqlearn</h3>
+                      <h4 className="text-white">(Learning)</h4>
                     </div>
                     <div className="flex justify-between items-center mt-2.5">
                       <div>
                         <Link
-                          to="https://www.figma.com/proto/M1mnxz7Kp2nCc9XfIJj6cO/Demysti5?page-id=281%3A2344&node-id=281-2345&t=iPrv67yWIXXMa402-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=281%3A2345&hide-ui=1"
+                          to="https://www.figma.com/proto/Lpl14RL2PjUJ4d0zj1JK78/Uniqlearn?page-id=0%3A1&node-id=348-517&starting-point-node-id=348%3A517&t=7zHOPtYFpnOM5oZv-1"
                           target="_blank"
                           className="link-items"
                         >
@@ -105,7 +104,7 @@ export default function Hero() {
                       </div>
 
                       <Link
-                        to="/project/dmysti5"
+                        to="/project/uniqLearn"
                         className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                       >
                         <h4>View Details</h4>
@@ -116,27 +115,25 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="grid sm:gap-10 gap-[20px]">
+              <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                  <div className="bg-white p-5 ">
-                    <p className="text-[#1F1E1E99] mb-2.5 text-start">
-                      Dashboard
-                    </p>
+                  <div className="bg-white p-5 h-full ">
+                    <p className="text-[#1F1E1E99] text-start mb-2.5">App</p>
                     <div>
-                      <img src={project2} alt="" />
+                      <img src={project5} alt="" />
                     </div>
                   </div>
 
                   <div className="Portfolio-contant">
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
-                        <h3 className="text-white">Voicing AI</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h3 className="text-white">Workista</h3>
+                        <h4 className="text-white">(Job)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
                           <Link
-                            to="https://www.figma.com/proto/sgyXyzacg0ozPkOn9TGWyv/TheVoicing-Udemy--Internal-?page-id=0%3A1&node-id=1-33693&starting-point-node-id=13%3A4185&t=UTT9WEJBPZcOXfJ0-1"
+                            to="https://www.figma.com/proto/oc2IcbgfPd55Q6yntMc2vE/Workiesta?page-id=820%3A1428&node-id=848-3225&viewport=363%2C826%2C0.34&t=rZWxkLYnW8Cd4xH4-1&scaling=scale-down&content-scaling=fixed"
                             target="_blank"
                             className="link-items"
                           >
@@ -147,7 +144,7 @@ export default function Hero() {
                         </div>
 
                         <Link
-                          to="/project/voicing"
+                          to="/project/workista"
                           className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                         >
                           <h4>View Details</h4>
@@ -159,8 +156,10 @@ export default function Hero() {
                 </div>
 
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                  <div className="bg-white p-5 ">
-                    <p className="text-[#1F1E1E99] mb-2.5 text-start">App</p>
+                  <div className="bg-white p-5 h-full ">
+                    <p className="text-[#1F1E1E99] text-start mb-2.5">
+                      Mobile App
+                    </p>
                     <div>
                       <img src={project3} alt="" />
                     </div>
@@ -200,27 +199,28 @@ export default function Hero() {
             </div>
 
             <div className="leftPortfolio-grid ">
-              <div className="grid sm:gap-10 gap-[20px]">
+              <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                  <div className="bg-white p-5 ">
-                    <p className="text-[#1F1E1E99] mb-2.5 text-start">
-                      Website
+                  <div className="bg-white h-full project-imgage">
+                    <p className="text-[#1F1E1E99] text-start mb-2.5">
+                      Web App
                     </p>
                     <div>
-                      <img src={project4} alt="" />
+                      <img src={project1} alt="" />
                     </div>
                   </div>
 
                   <div className="Portfolio-contant">
-                    <div className="w-full">
+                    <div className="w-full ">
                       <div className="flex items-center gap-2.5">
-                        <h3 className="text-white">Uniqlearn</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h3 className="text-white">Dmysti5</h3>
+                        <h4 className="text-white">(Cybersecurity)</h4>
                       </div>
+
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
                           <Link
-                            to="https://www.figma.com/proto/Lpl14RL2PjUJ4d0zj1JK78/Uniqlearn?page-id=0%3A1&node-id=348-517&starting-point-node-id=348%3A517&t=7zHOPtYFpnOM5oZv-1"
+                            to="https://www.figma.com/proto/M1mnxz7Kp2nCc9XfIJj6cO/Demysti5?page-id=281%3A2344&node-id=281-2345&t=iPrv67yWIXXMa402-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=281%3A2345&hide-ui=1"
                             target="_blank"
                             className="link-items"
                           >
@@ -231,7 +231,7 @@ export default function Hero() {
                         </div>
 
                         <Link
-                          to="/project/uniqLearn"
+                          to="/project/dmysti5"
                           className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                         >
                           <h4>View Details</h4>
@@ -241,24 +241,27 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
+
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                  <div className="bg-white p-5 ">
-                    <p className="text-[#1F1E1E99] mb-2.5 text-start">App</p>
+                  <div className="bg-white p-5 h-full ">
+                    <p className="text-[#1F1E1E99] text-start mb-2.5">
+                      Web App
+                    </p>
                     <div>
-                      <img src={project5} alt="" />
+                      <img src={project2} alt="" />
                     </div>
                   </div>
 
                   <div className="Portfolio-contant">
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
-                        <h3 className="text-white">Workista</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h3 className="text-white">Voicing AI</h3>
+                        <h4 className="text-white">(AI Video)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
                           <Link
-                            to="https://www.figma.com/proto/oc2IcbgfPd55Q6yntMc2vE/Workiesta?page-id=820%3A1428&node-id=848-3225&viewport=363%2C826%2C0.34&t=rZWxkLYnW8Cd4xH4-1&scaling=scale-down&content-scaling=fixed"
+                            to="https://www.figma.com/proto/sgyXyzacg0ozPkOn9TGWyv/TheVoicing-Udemy--Internal-?page-id=0%3A1&node-id=1-33693&starting-point-node-id=13%3A4185&t=UTT9WEJBPZcOXfJ0-1"
                             target="_blank"
                             className="link-items"
                           >
@@ -269,7 +272,7 @@ export default function Hero() {
                         </div>
 
                         <Link
-                          to="/project/workista"
+                          to="/project/voicing"
                           className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                         >
                           <h4>View Details</h4>
@@ -284,7 +287,7 @@ export default function Hero() {
               {/* Trudentz */}
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white  h-full project-imgage">
-                  <p className="text-[#1F1E1E99] mb-2.5 text-start">Website</p>
+                  <p className="text-[#1F1E1E99] text-start mb-2.5">Website</p>
                   <div>
                     <img src={project6} alt="" />
                   </div>
@@ -293,7 +296,7 @@ export default function Hero() {
                   <div className="w-full ">
                     <div className="flex items-center gap-2.5">
                       <h3 className="text-white">Trudentz</h3>
-                      <h4 className="text-white">(AI Learning)</h4>
+                      <h4 className="text-white">(Dental)</h4>
                     </div>
                     <div className="flex justify-between items-center mt-2.5">
                       <div className="flex items-center gap-2.5">
@@ -319,7 +322,7 @@ export default function Hero() {
 
                       <Link
                         to="/project/trudentz"
-                        className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
+                        className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6  rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                       >
                         <h4>View Details</h4>
                         <img src={viewProjectArrow} alt="" />
@@ -342,14 +345,14 @@ export default function Hero() {
 
       <Footer></Footer>
 
-      <Link
+      {/* <Link
         className="upwork-logo hidden sm:block"
         to="https://upwork.com/freelancers/jatinchauhan"
         target="_blank"
       >
         <img src={upworkring} alt="" className="circle-text" />
         <img src={uplogo} alt="" className="upwork-icon" />
-      </Link>
+      </Link> */}
     </div>
   );
 }

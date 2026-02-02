@@ -29,15 +29,15 @@ export default function Cta() {
                 </p>
               </Link>
 
-              <Link to="" className="flex gap-2.5 items-center">
+              {/* <Link to="" className="flex gap-2.5 items-center">
                 <img src={phoneicon} alt="" className="w-6 md:w-auto" />
                 <p className="text-[16px] xl:text-[20px] font-light text-[#1E1E1E]">
                   +91 70963 64801
                 </p>
-              </Link>
+              </Link> */}
 
               <ul className="flex items-center gap-3">
-                <li className="icon-tilt">
+                {/* <li className="icon-tilt">
                   <Link
                     to="https://www.linkedin.com/in/jatin-chauhan-a52a4947"
                     target="_blank"
@@ -61,7 +61,7 @@ export default function Cta() {
                       className="text-[18px] md:text-[20px]"
                     />
                   </Link>
-                </li>
+                </li> */}
 
                 <li className="icon-tilt">
                   <Link

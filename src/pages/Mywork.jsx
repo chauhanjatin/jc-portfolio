@@ -19,21 +19,19 @@ import Footer from "../components/Footer";
 import Cta from "../components/Cta";
 
 export default function Mywork() {
-  const [activeTab, setActiveTab] = useState("All");  
+  const [activeTab, setActiveTab] = useState("All");
   const handleFilter = (type) => {
     setActiveTab(type);
   };
 
   return (
     <div>
-
       <div className="containerX relative z-10">
         <div className="mt-[160px]">
-        
           <div className="mt-10 grid gap-4 sm:flex sm:justify-between sm:items-center">
             <h2>Work Showcase</h2>
             <ul className="flex items-center gap-2.5">
-              {["All", "Dashboard", "Website", "App"].map((type) => (
+              {["All", "Web App", "Website", "Mobile App"].map((type) => (
                 <li
                   key={type}
                   onClick={() => handleFilter(type)}
@@ -47,35 +45,37 @@ export default function Mywork() {
                   {type}
                 </li>
               ))}
-            </ul> 
+            </ul>
           </div>
 
           {/* All */}
-          <div className={`All-items ${
-              activeTab === "All" ? "block animate-fade" : "hidden"}`}>
-
+          <div
+            className={`All-items ${
+              activeTab === "All" ? "block animate-fade" : "hidden"
+            }`}
+          >
             <div className="Portfolio-grid">
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                <div className="bg-white h-full project-imgage">
-                  <p className="text-[#1F1E1E99] mb-2.5">Dashboard</p>
+                <div className="bg-white p-5 h-full ">
+                  <p className="text-[#1F1E1E99] mb-2.5">Web App</p>
                   <div>
-                    <img src={project1} alt="" />
+                    <img src={project4} alt="" />
                   </div>
                 </div>
 
                 <div className="Portfolio-contant">
-                  <div className="w-full ">
+                  <div className="w-full">
                     <div className="flex items-center gap-2.5">
-                      <h3 className="text-white">Dmysti5</h3>
-                      <h4 className="text-white">(Cybersecurity)</h4>
+                      <h3 className="text-white">Uniqlearn</h3>
+                      <h4 className="text-white">(Learning)</h4>
                     </div>
-                    
                     <div className="flex justify-between items-center mt-2.5">
                       <div>
                         <Link
-                          to="https://www.figma.com/proto/M1mnxz7Kp2nCc9XfIJj6cO/Demysti5?page-id=281%3A2344&node-id=281-2345&t=iPrv67yWIXXMa402-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=281%3A2345&hide-ui=1"
+                          to="https://www.figma.com/proto/Lpl14RL2PjUJ4d0zj1JK78/Uniqlearn?page-id=0%3A1&node-id=348-517&starting-point-node-id=348%3A517&t=7zHOPtYFpnOM5oZv-1"
                           target="_blank"
-                          className="link-items">
+                          className="link-items"
+                        >
                           <div>
                             <img src={figmalink} alt="" />
                           </div>
@@ -83,13 +83,13 @@ export default function Mywork() {
                       </div>
 
                       <Link
-                        to="/project/dmysti5"
-                        className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]">
+                        to="/project/uniqLearn"
+                        className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
+                      >
                         <h4>View Details</h4>
                         <img src={viewProjectArrow} alt="" />
                       </Link>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -97,22 +97,22 @@ export default function Mywork() {
               <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">Dashboard</p>
+                    <p className="text-[#1F1E1E99] mb-2.5">App</p>
                     <div>
-                      <img src={project2} alt="" />
+                      <img src={project5} alt="" />
                     </div>
                   </div>
 
                   <div className="Portfolio-contant">
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
-                        <h3 className="text-white">Voicing AI</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h3 className="text-white">Workista</h3>
+                        <h4 className="text-white">(Job)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
                           <Link
-                            to="https://www.figma.com/proto/sgyXyzacg0ozPkOn9TGWyv/TheVoicing-Udemy--Internal-?page-id=0%3A1&node-id=1-33693&starting-point-node-id=13%3A4185&t=UTT9WEJBPZcOXfJ0-1"
+                            to="https://www.figma.com/proto/oc2IcbgfPd55Q6yntMc2vE/Workiesta?page-id=820%3A1428&node-id=848-3225&viewport=363%2C826%2C0.34&t=rZWxkLYnW8Cd4xH4-1&scaling=scale-down&content-scaling=fixed"
                             target="_blank"
                             className="link-items"
                           >
@@ -123,7 +123,7 @@ export default function Mywork() {
                         </div>
 
                         <Link
-                          to="/project/voicing"
+                          to="/project/workista"
                           className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                         >
                           <h4>View Details</h4>
@@ -136,7 +136,7 @@ export default function Mywork() {
 
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                    <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
                     <div>
                       <img src={project3} alt="" />
                     </div>
@@ -178,23 +178,24 @@ export default function Mywork() {
             <div className="leftPortfolio-grid ">
               <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                  <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">Website</p>
+                  <div className="bg-white h-full project-imgage">
+                    <p className="text-[#1F1E1E99] mb-2.5">Web App</p>
                     <div>
-                      <img src={project4} alt="" />
+                      <img src={project1} alt="" />
                     </div>
                   </div>
 
                   <div className="Portfolio-contant">
-                    <div className="w-full">
+                    <div className="w-full ">
                       <div className="flex items-center gap-2.5">
-                        <h3 className="text-white">Uniqlearn</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h3 className="text-white">Dmysti5</h3>
+                        <h4 className="text-white">(Cybersecurity)</h4>
                       </div>
+
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
                           <Link
-                            to="https://www.figma.com/proto/Lpl14RL2PjUJ4d0zj1JK78/Uniqlearn?page-id=0%3A1&node-id=348-517&starting-point-node-id=348%3A517&t=7zHOPtYFpnOM5oZv-1"
+                            to="https://www.figma.com/proto/M1mnxz7Kp2nCc9XfIJj6cO/Demysti5?page-id=281%3A2344&node-id=281-2345&t=iPrv67yWIXXMa402-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=281%3A2345&hide-ui=1"
                             target="_blank"
                             className="link-items"
                           >
@@ -205,7 +206,7 @@ export default function Mywork() {
                         </div>
 
                         <Link
-                          to="/project/uniqLearn"
+                          to="/project/dmysti5"
                           className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                         >
                           <h4>View Details</h4>
@@ -218,22 +219,22 @@ export default function Mywork() {
 
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                    <p className="text-[#1F1E1E99] mb-2.5">Web App</p>
                     <div>
-                      <img src={project5} alt="" />
+                      <img src={project2} alt="" />
                     </div>
                   </div>
 
                   <div className="Portfolio-contant">
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
-                        <h3 className="text-white">Workista</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h3 className="text-white">Voicing AI</h3>
+                        <h4 className="text-white">(AI Video)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
                           <Link
-                            to="https://www.figma.com/proto/oc2IcbgfPd55Q6yntMc2vE/Workiesta?page-id=820%3A1428&node-id=848-3225&viewport=363%2C826%2C0.34&t=rZWxkLYnW8Cd4xH4-1&scaling=scale-down&content-scaling=fixed"
+                            to="https://www.figma.com/proto/sgyXyzacg0ozPkOn9TGWyv/TheVoicing-Udemy--Internal-?page-id=0%3A1&node-id=1-33693&starting-point-node-id=13%3A4185&t=UTT9WEJBPZcOXfJ0-1"
                             target="_blank"
                             className="link-items"
                           >
@@ -244,7 +245,7 @@ export default function Mywork() {
                         </div>
 
                         <Link
-                          to="/project/workista"
+                          to="/project/voicing"
                           className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                         >
                           <h4>View Details</h4>
@@ -268,7 +269,7 @@ export default function Mywork() {
                   <div className="w-full ">
                     <div className="flex items-center gap-2.5">
                       <h3 className="text-white">Trudentz</h3>
-                      <h4 className="text-white">(AI Learning)</h4>
+                      <h4 className="text-white">(Dental)</h4>
                     </div>
                     <div className="flex justify-between items-center mt-2.5">
                       <div className="flex items-center gap-2.5">
@@ -305,8 +306,7 @@ export default function Mywork() {
               </div>
             </div>
 
-            <div className="Portfolio-grid ">
-
+            <div className="Portfolio-grid">
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white  h-full project-imgage">
                   <p className="text-[#1F1E1E99] mb-2.5">Website</p>
@@ -318,7 +318,7 @@ export default function Mywork() {
                   <div className="w-full ">
                     <div className="flex items-center gap-2.5">
                       <h3 className="text-white">Cogentshift</h3>
-                      <h4 className="text-white">(AI Learning)</h4>
+                      <h4 className="text-white">(Salesforce)</h4>
                     </div>
                     <div className="flex justify-between items-center mt-2.5">
                       <div className="flex items-center gap-2.5">
@@ -367,7 +367,7 @@ export default function Mywork() {
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
                         <h3 className="text-white">Salviali</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h4 className="text-white">(Ecommerce)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div className="flex items-center gap-2.5">
@@ -403,7 +403,7 @@ export default function Mywork() {
 
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                    <p className="text-[#1F1E1E99] mb-2.5">Tab App</p>
                     <div>
                       <img src={project9} alt="" />
                     </div>
@@ -413,7 +413,7 @@ export default function Mywork() {
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
                         <h3 className="text-white">Instant Smile</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h4 className="text-white">(Dental)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
@@ -442,7 +442,7 @@ export default function Mywork() {
               </div>
             </div>
 
-            <div className="leftPortfolio-grid ">
+            <div className="leftPortfolio-grid">
               <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
@@ -456,7 +456,7 @@ export default function Mywork() {
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
                         <h3 className="text-white"> Dermatology</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h4 className="text-white">(Skin Care)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
@@ -485,7 +485,7 @@ export default function Mywork() {
 
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                    <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
                     <div>
                       <img src={project12} alt="" />
                     </div>
@@ -495,7 +495,7 @@ export default function Mywork() {
                     <div className="w-full ">
                       <div className="flex items-center gap-2.5">
                         <h3 className="text-white">Arouzed</h3>
-                        <h4 className="text-white">(AI Learning)</h4>
+                        <h4 className="text-white">(Dating)</h4>
                       </div>
                       <div className="flex justify-between items-center mt-2.5">
                         <div>
@@ -534,7 +534,7 @@ export default function Mywork() {
                   <div className="w-full ">
                     <div className="flex items-center gap-2.5">
                       <h3 className="text-white">Youniverse Home Care</h3>
-                      <h4 className="text-white">(AI Learning)</h4>
+                      <h4 className="text-white">(Health Care)</h4>
                     </div>
                     <div className="flex justify-between items-center mt-2.5">
                       <div className="flex  items-center gap-2.5">
@@ -572,15 +572,16 @@ export default function Mywork() {
             </div>
           </div>
 
-          {/* Dashboard */}
-          <div className={`Dashboard-items ${
-              activeTab === "Dashboard" ? "block animate-fade" : "hidden"
+          {/* Web App */}
+          <div
+            className={`Dashboard-items ${
+              activeTab === "Web App" ? "block animate-fade" : "hidden"
             }`}
           >
             <div className="Dashboard-grid  mt-10">
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">Dashboard</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Web App</p>
                   <div>
                     <img src={project4} alt="" />
                   </div>
@@ -618,7 +619,7 @@ export default function Mywork() {
 
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">Dashboard</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Web App</p>
                   <div>
                     <img src={project1} alt="" />
                   </div>
@@ -656,7 +657,7 @@ export default function Mywork() {
 
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p>Dashboard</p>
+                  <p className="text-[#1F1E1E99] ">Web App</p>
                   <div>
                     <img src={project2} alt="" />
                   </div>
@@ -695,7 +696,8 @@ export default function Mywork() {
           </div>
 
           {/* Website */}
-          <div className={`Website-items ${
+          <div
+            className={`Website-items ${
               activeTab === "Website" ? "block animate-fade" : "hidden"
             }`}
           >
@@ -929,13 +931,15 @@ export default function Mywork() {
           </div>
 
           {/* App */}
-          <div className={`App-items ${
-              activeTab === "App" ? "block animate-fade" : "hidden"
-            }`} >
+          <div
+            className={`App-items ${
+              activeTab === "Mobile App" ? "block animate-fade" : "hidden"
+            }`}
+          >
             <div className="App-grid  mt-10">
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
                   <div>
                     <img src={project3} alt="" />
                   </div>
@@ -973,7 +977,7 @@ export default function Mywork() {
 
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
                   <div>
                     <img src={project5} alt="" />
                   </div>
@@ -1011,7 +1015,7 @@ export default function Mywork() {
 
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Tab App</p>
                   <div>
                     <img src={project9} alt="" />
                   </div>
@@ -1049,7 +1053,7 @@ export default function Mywork() {
 
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">App</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
                   <div>
                     <img src={project12} alt="" />
                   </div>
@@ -1086,9 +1090,8 @@ export default function Mywork() {
               </div>
             </div>
           </div>
-
         </div>
-        
+
         <Cta></Cta>
       </div>
 

@@ -114,7 +114,7 @@ export default function Sidebar({ open, setOpen }) {
                   </p>
                 </Link>
 
-                <Link
+                {/* <Link
                   to=""
                   style={{ transitionDelay: "320ms" }}
                   className={`
@@ -126,7 +126,7 @@ export default function Sidebar({ open, setOpen }) {
                   <p className="text-[20px] xl:text-[28px] font-normal text-[#1E1E1E]">
                     +91 70963 64801
                   </p>
-                </Link>
+                </Link> */}
 
                 <ul
                   style={{ transitionDelay: "480ms" }}
@@ -136,7 +136,7 @@ export default function Sidebar({ open, setOpen }) {
       ${open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
     `}
                 >
-                  <li className="icon-tilt">
+                  {/* <li className="icon-tilt">
                     <Link
                       to="https://www.linkedin.com/in/jatin-chauhan-a52a4947"
                       target="_blank"
@@ -168,7 +168,7 @@ export default function Sidebar({ open, setOpen }) {
                         className="text-[18px] md:text-[20px]"
                       />
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li className="icon-tilt">
                     <Link
