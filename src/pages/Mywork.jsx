@@ -403,7 +403,7 @@ export default function Mywork() {
 
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] mb-2.5">Tab App</p>
+                    <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
                     <div>
                       <img src={project9} alt="" />
                     </div>
@@ -683,6 +683,44 @@ export default function Mywork() {
 
                       <Link
                         to="/project/voicing"
+                        className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
+                      >
+                        <h4>View Details</h4>
+                        <img src={viewProjectArrow} alt="" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
+                <div className="bg-white p-5 h-full">
+                  <p className="text-[#1F1E1E99] mb-2.5">Web App</p>
+                  <div>
+                    <img src={project5} alt="" />
+                  </div>
+                </div>
+                <div className="Portfolio-contant">
+                  <div className="w-full ">
+                    <div className="flex items-center gap-2.5">
+                      <h3 className="text-white">Workista</h3>
+                      <h4 className="text-white">(Job)</h4>
+                    </div>
+                    <div className="flex justify-between items-center mt-2.5">
+                      <div>
+                        <Link
+                          to="https://www.figma.com/proto/oc2IcbgfPd55Q6yntMc2vE/Workiesta?page-id=820%3A1428&node-id=848-3225&viewport=363%2C826%2C0.34&t=rZWxkLYnW8Cd4xH4-1&scaling=scale-down&content-scaling=fixed"
+                          target="_blank"
+                          className="link-items"
+                        >
+                          <div>
+                            <img src={figmalink} alt="" />
+                          </div>
+                        </Link>
+                      </div>
+
+                      <Link
+                        to="/project/workista"
                         className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
                       >
                         <h4>View Details</h4>
@@ -977,45 +1015,7 @@ export default function Mywork() {
 
               <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                 <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">Mobile App</p>
-                  <div>
-                    <img src={project5} alt="" />
-                  </div>
-                </div>
-                <div className="Portfolio-contant">
-                  <div className="w-full ">
-                    <div className="flex items-center gap-2.5">
-                      <h3 className="text-white">Workista</h3>
-                      <h4 className="text-white">(Job)</h4>
-                    </div>
-                    <div className="flex justify-between items-center mt-2.5">
-                      <div>
-                        <Link
-                          to="https://www.figma.com/proto/oc2IcbgfPd55Q6yntMc2vE/Workiesta?page-id=820%3A1428&node-id=848-3225&viewport=363%2C826%2C0.34&t=rZWxkLYnW8Cd4xH4-1&scaling=scale-down&content-scaling=fixed"
-                          target="_blank"
-                          className="link-items"
-                        >
-                          <div>
-                            <img src={figmalink} alt="" />
-                          </div>
-                        </Link>
-                      </div>
-
-                      <Link
-                        to="/project/workista"
-                        className="flex gap-2.5 bg-[#FFFFFF] py-3 px-6 rounded-[40px] transition-all duration-300 hover:bg-[--primary-color]"
-                      >
-                        <h4>View Details</h4>
-                        <img src={viewProjectArrow} alt="" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
-                <div className="bg-white p-5 h-full">
-                  <p className="text-[#1F1E1E99] mb-2.5">Tab App</p>
+                  <p className="text-[#1F1E1E99] mb-2.5">Moblie App</p>
                   <div>
                     <img src={project9} alt="" />
                   </div>

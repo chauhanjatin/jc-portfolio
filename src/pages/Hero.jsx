@@ -118,7 +118,7 @@ export default function Hero() {
               <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] text-start mb-2.5">App</p>
+                    <p className="text-[#1F1E1E99] text-start mb-2.5">Web App</p>
                     <div>
                       <img src={project5} alt="" />
                     </div>
