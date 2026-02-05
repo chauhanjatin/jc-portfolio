@@ -13,6 +13,8 @@ import project6 from "../assets/images/project6.png";
 import figmalink from "../assets/images/figma-link.png";
 import link from "../assets/images/link.png";
 import viewProjectArrow from "../assets/images/icons/viewproject-arrow.svg";
+import Ourclients from "../components/Ourclient";
+import Industry from "../components/Industry";
 
 export default function Hero() {
   return (
@@ -73,6 +75,8 @@ export default function Hero() {
             </div>
           </div>
 
+          <Ourclients />
+
           <div className="sm:mt-0 mt-10">
             <h2>Latest Work</h2>
             <div className="Portfolio-grid">
@@ -118,7 +122,9 @@ export default function Hero() {
               <div className="grid gap-10">
                 <div className="relative overflow-hidden rounded-[40px] Portfolio-items">
                   <div className="bg-white p-5 h-full ">
-                    <p className="text-[#1F1E1E99] text-start mb-2.5">Web App</p>
+                    <p className="text-[#1F1E1E99] text-start mb-2.5">
+                      Web App
+                    </p>
                     <div>
                       <img src={project5} alt="" />
                     </div>
@@ -342,6 +348,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <Industry />
 
       <Footer></Footer>
 
