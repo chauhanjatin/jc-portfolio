@@ -11,9 +11,9 @@ import {
 export default function Navbar() {
   return (
     <div>
-      <div className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[300px] md:after:h-[500px] after:bg-[linear-gradient(180deg,rgba(244,244,244,0)_-1%,#F4F4F4_100%)] z-10 w-full absolute top-0 h-[80vh] md:h-dvh">
+      {/* <div className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[300px] md:after:h-[500px] after:bg-[linear-gradient(180deg,rgba(244,244,244,0)_-1%,#F4F4F4_100%)] z-10 w-full absolute top-0 h-[80vh] md:h-dvh">
         <img src={herobg} alt="" className="w-full h-full opacity-35" />
-      </div>
+      </div> */}
       <div className="containerX ">
         <div className="relative top-0 z-50">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 mt-[30px] md:mt-[40px] ">
@@ -27,7 +27,7 @@ export default function Navbar() {
                   Jatin Chauhan
                 </h4>
                 <p className="text-[#1F1E1E99] text-sm sm:text-base">
-                  UI/UX Designer, Creative Developer
+                  Lead UX Designer + Frontend Designer
                 </p>
               </div>
             </Link>

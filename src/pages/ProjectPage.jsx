@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Reveal from "../components/Reveal";
 
 export default function ProjectPage() {
   const { slug } = useParams();
@@ -17,17 +18,17 @@ export default function ProjectPage() {
   return (
     <div>
       <div className="containerX relative z-10">
-        <div className="sm:mt-[150px] mt-[80px] flex items-center justify-between">
+        <Reveal className="sm:mt-[150px] mt-[80px] flex items-center justify-between">
           <Link to="/mywork">
             <FontAwesomeIcon icon={faArrowLeft} className="sm:text-[30px] text-[20px]" />
           </Link>
           <h2 className="text-center ">{project.title}</h2>
           <div></div>
-        </div>
+        </Reveal>
 
-        <div className="my-[60px] sm:my-[40px]">
+        <Reveal className="my-[60px] sm:my-[40px]" delay={80}>
           <img src={project.coverImage} alt="" className="w-full" />
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* LEFT SIDEBAR */}

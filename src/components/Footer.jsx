@@ -8,13 +8,14 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faUpwork } from "@fortawesome/free-brands-svg-icons";
 import { faBehance } from "@fortawesome/free-brands-svg-icons";
 import { faDribbble } from "@fortawesome/free-brands-svg-icons";
+import Reveal from "./Reveal";
 
 export default function Cta() {
   return (
     <div>
       <div className="relative">
         <div className="containerX">
-          <div className="py-[40px] md:py-[80px] px-[20px] md:px-[10px] text-center relative z-10">
+          <Reveal className="py-[40px] md:py-[80px] px-[20px] md:px-[10px] text-center relative z-10">
             <h2 className="text-[#1E1E1E] text-2xl md:text-[42px]">
               Let's Connect.
             </h2>
@@ -22,7 +23,7 @@ export default function Cta() {
             <div
               className="my-[40px] md:my-[50px] flex flex-col md:flex-row items-center md:justify-center gap-6 xl:gap-[90px] 2xl:gap-[48px] md:flex-nowrap w-full">
 
-              <Link to="/" className="flex gap-2.5 items-center">
+              <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=chauhanjatin.25@gmail.com" target="_blank" className="flex gap-2.5 items-center">
                 <img src={gmailicon} alt="" className="w-6 md:w-auto" />
                 <p className="text-[16px] xl:text-[20px] font-light text-[#1E1E1E]">
                   chauhanjatin.25@gmail.com
@@ -94,10 +95,10 @@ export default function Cta() {
             <p className="text-[#1E1E1E80] font-light mb-[30px] md:mb-[40px] text-sm md:text-base">
               Copyright ⓒ 2025. All Rights Reserved by Jatin Chauhan.
             </p>
-          </div>
+          </Reveal>
         </div>
 
-        <div
+        {/* <div
           className="after:content-[''] after:absolute after:top-0 after:left-0 after:w-full 
                         after:h-[300px] md:after:h-[500px] 
                         after:bg-[linear-gradient(360deg,rgba(244,244,244,0)_0%,#F4F4F4_100%)] 
@@ -108,7 +109,7 @@ export default function Cta() {
             alt=""
             className="w-full h-full opacity-35 object-cover"
           />
-        </div>
+        </div> */}
         
       </div>
     </div>

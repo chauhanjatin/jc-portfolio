@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Cta from "../components/Cta";
 import emailicon from "../assets/images/icons/email-icon.svg";
 import { Link } from "react-router-dom";
+import Reveal from "../components/Reveal";
 
 export default function Contactus() {
   return (
@@ -10,24 +11,22 @@ export default function Contactus() {
       <div className="containerX relative z-10">
         
         <div className="Contactus-section sm:h-[calc(100vh-70px)] h-full flex justify-center items-center">
-          <div>
-            <h1>Let’s Work Together</h1>
-            <p className="text-[#1F1E1E80] mt-[30px]">
-              Have an idea or a project in mind? I design thoughtful digital
-              <br></br>
-              experiences that balance creativity and usability.
+          <Reveal>
+            <p className="text-[#1F1E1E80] mt-[30px] text-[20px]"> 
+            Start by<span className="text-[--primary-color]"> Saying hi</span>
             </p>
+            <h1>Let's make <br></br> something amazing toghtether</h1>
            
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chauhanjatin.25@gmail.com"
-                rel="noopener noreferrer"
-              className="flex items-center gap-3 mt-[50px]">
+                rel="noopener noreferrer" target="_blank"
+              className="underline ">
               {/* <img src={emailicon} alt="Email" /> */}
-              <h1 className="text-[--primary-color]">
+              <h1 className="text-[--primary-color] mt-[50px]">
                 chauhanjatin.25@gmail.com
               </h1>
             </a>
 
-          </div>
+          </Reveal>
         </div>
 
         {/* <div className="max-w-7xl mx-auto sm:py-20 py-16">

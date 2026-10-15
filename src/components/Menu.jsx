@@ -4,7 +4,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Menu({ open, setOpen }) {
   return (
     <button
-      className="bg-[--primary-color] flex items-center justify-center cursor-pointer rounded-[80px] py-[10px] px-[16px] fixed sm:right-[50px] sm:top-[50px] top-[20px] right-[20px] z-[999]"
+      className="bg-[--primary-color] text-white flex items-center justify-center cursor-pointer rounded-[80px] py-[10px] px-[16px] fixed sm:right-[50px] sm:top-[50px] top-[20px] right-[20px] z-[999]"
       onClick={() => setOpen(!open)}
     >
       <div className="relative flex items-center justify-center">
