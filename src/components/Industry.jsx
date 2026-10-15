@@ -2,10 +2,10 @@ import sports from "../assets/images/industry/sports.png";
 import saas from "../assets/images/industry/saas.png";
 import ai from "../assets/images/industry/ai.png";
 import restaurant from "../assets/images/industry/restaurant.png";
-import healthCare from "../assets/images/industry/healthCare.png";
+import healthCare from "../assets/images/industry/healthcare.png";
 import fintech from "../assets/images/industry/fintech.png";
 import travel from "../assets/images/industry/travel.png";
-import ecommerce from "../assets/images/industry/Ecommerce.png";
+import ecommerce from "../assets/images/industry/ecommerce.png";
 
 import Reveal from "./Reveal";
 
