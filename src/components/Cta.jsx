@@ -9,7 +9,7 @@ export default function Cta() {
             Start a Conversation That <br /> Brings Ideas to Life
           </h2>
           <div >
-            <Link to="/contactus" className="bg-[--primary-color] py-3 px-6 border-[--primary-color] border border-1 rounded-[40px] text-center inline-block transition-all duration-300 hover:bg-transparent hover:border-[#1E1E1E] hover:text-[#1E1E1E] text-white">
+            <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=chauhanjatin.25@gmail.com" target="_blank" className="bg-[--primary-color] py-3 px-6 border-[--primary-color] border border-1 rounded-[40px] text-center inline-block transition-all duration-300 hover:bg-transparent hover:border-[#1E1E1E] hover:text-[#1E1E1E] text-white">
               <h4 className="font-light text-nowrap">Say "Hello Jatin"</h4>
             </Link>
           </div>
