@@ -1734,7 +1734,7 @@ display: grid;
 
 @media only screen and (max-width: 575px) {
   .containerX {
-    margin: 0 35px;
+    margin: 0 25px;
   }
 
   h1 {
@@ -1825,7 +1825,7 @@ display: grid;
 
   .Industry_items {
     padding: 10px 0;
-    width: 180px;
+    width: auto;
   }
 
   .marquee__group {
@@ -1991,5 +1991,9 @@ display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
     display: grid;
+}
+
+.work-page {
+  margin-top: 40px;
 }
 }

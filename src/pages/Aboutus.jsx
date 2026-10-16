@@ -128,7 +128,7 @@ export default function Aboutus() {
             <Link
               to="https://mail.google.com/mail/?view=cm&fs=1&to=chauhanjatin.25@gmail.com"
               target="_blank"
-              className="my-[50px] border border-[--primary-color] bg-[--primary-color] text-white py-3 px-6 inline-flex rounded-[40px] font-light transition-all duration-300 hover:bg-transparent hover:border-[#1E1E1E] hover:text-[#1E1E1E]"
+              className="md:my-[50px] my-[30px] border border-[--primary-color] bg-[--primary-color] text-white py-3 px-6 inline-flex rounded-[40px] font-light transition-all duration-300 hover:bg-transparent hover:border-[#1E1E1E] hover:text-[#1E1E1E]"
             >
               <h4>Say "Hello Jatin"</h4>
             </Link>

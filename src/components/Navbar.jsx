@@ -18,8 +18,8 @@ export default function Navbar() {
         <div className="relative top-0 z-50">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 mt-[30px] md:mt-[40px] ">
             
-            <Link to='/' className="flex items-center gap-4 md:gap-5">
-              <div>
+            <Link to='/' className="flex items-center gap-2 md:gap-5">
+              <div className="w-[50px] h-[50px] md:w-[60px] md:h-[60px]">
                 <img src={profileimg} alt="" />
               </div>
               <div>
@@ -40,7 +40,7 @@ export default function Navbar() {
                 </p>
               </div>
               <div className="hidden sm:block bg-[#44444499] w-[2px] h-[40px] md:h-[35px]"></div> */}
-              <ul className="flex items-center gap-3">
+              <ul className="md:flex items-center gap-3 hidden ">
                 {/* <li className="icon-tilt">
                   <Link
                     to="https://www.linkedin.com/in/jatin-chauhan-a52a4947"

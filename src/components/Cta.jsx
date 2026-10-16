@@ -4,7 +4,7 @@ export default function Cta() {
   return (
     <div className="sm:mt-[100px] mt-[60px] relative z-10">
       <div className=" startConversation_img border-[10px] border-white rounded-[40px] sm:p-[50px] p-[25px]">
-        <div className="sm:flex grid items-center sm:gap-[60px] gap-[40px] justify-between">
+        <div className="sm:flex grid items-center justify-center md:justify-between sm:gap-[60px] gap-[40px]  text-center md:text-left">
           <h2 className="font-medium">
             Start a Conversation That <br /> Brings Ideas to Life
           </h2>
